@@ -16,7 +16,7 @@
 
 	<%@ Register TagPrefix="fortyfingers" TagName="STYLEHELPER" Src="~/DesktopModules/40Fingers/SkinObjects/StyleHelper/StyleHelper.ascx" %> 
 	
-	<fortyfingers:STYLEHELPER ID="SH1" IfNoViewRights="True" RedirectTo="/" runat="server" />
+	<fortyfingers:STYLEHELPER ID="SH1" IfNoViewRights="True" Content="You have no Right to View this page" runat="server" />
 	
 	<!-- END -->
 		
