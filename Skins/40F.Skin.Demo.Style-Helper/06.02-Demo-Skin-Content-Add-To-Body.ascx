@@ -16,7 +16,9 @@
 
 	<%@ Register TagPrefix="fortyfingers" TagName="STYLEHELPER" Src="~/DesktopModules/40Fingers/SkinObjects/StyleHelper/StyleHelper.ascx" %> 
 	
-	<fortyfingers:STYLEHELPER ID="SH1" AddEndBody="** Inject at Body Bottom **" AddAfterBody="** Inject at Body Top **" runat="server" />
+	<fortyfingers:STYLEHELPER ID="SH1" AddToBodyBottom="&lt;div&gt;** Inject at Body Bottom **&lt;/div&gt;" AddToBodyTop="&lt;div&gt;** Inject at Body Top **&lt;/div&gt;" runat="server" />
+	
+	<fortyfingers:STYLEHELPER ID="SH2" FilterAddToBody="true" IfRole="superusers" AddToBodyBottom="&lt;div&gt;** SuperUser: Conditional Inject **&lt;/div&gt;" AddToBodyTop="&lt;div&gt;** SuperUser: Conditional Inject **&lt;/div&gt;" runat="server" />
 	
 	<!-- END -->
 		
